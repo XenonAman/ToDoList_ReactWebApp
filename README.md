@@ -3,7 +3,8 @@
 
 Step 1: install all dependencies npm install
 
-Step 2: start server npm run server
+Step 2: start react and node server
+              server npm run server
               client npm run client
               
               each command on different terminal
