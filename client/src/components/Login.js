@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
+import { Animated } from "react-animated-css";
 import logo from '../logo.png';
-var FontAwesome = require("react-fontawesome");
+//var FontAwesome = require("react-fontawesome");
 
 class Login extends Component {
   render() {
@@ -8,7 +9,11 @@ class Login extends Component {
       <div> {/*====Main Div====*/}
 {/*====Whitespace====*/}
 {/*====Whitesoace====*/}
-
+          <Animated
+          animationIn="bounceIn"
+          animationOut="fadeOut"
+          isVisible={true}
+          >
                 <form className="ff">
 
                   <img src={logo} alt="To Do" className="logo" />
@@ -27,7 +32,7 @@ class Login extends Component {
                   <p className="nbtn">New User ? <button onClick={this.props.changeSign} className="reset">Sign Up</button> </p>
 
                 </form>
-
+          </Animated>
 
 {/*====Whitesoace====*/}
 {/*====Whitesoace====*/}

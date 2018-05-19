@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import logo from '../logo.png';
 // var FontAwesome = require("react-fontawesome");
 
 class Task extends Component {

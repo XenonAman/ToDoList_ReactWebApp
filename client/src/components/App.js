@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import { BrowserRouter, Route } from "react-router-dom";
 import Dashboard from "./Dashboard";
 import Start from "./Start";
-import { Row, Col } from 'react-bootstrap';
 
 class App extends Component {
 

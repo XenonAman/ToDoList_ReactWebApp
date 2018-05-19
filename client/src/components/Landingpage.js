@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Animated } from "react-animated-css";
 import logo from '../logo.png';
-var FontAwesome = require("react-fontawesome");
+//var FontAwesome = require("react-fontawesome");
 
 class Landingpage extends Component {
   render() {
