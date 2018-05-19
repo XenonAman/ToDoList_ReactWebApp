@@ -2,10 +2,16 @@ import React, { Component } from 'react';
 import { BrowserRouter, Route } from "react-router-dom";
 import Dashboard from "./Dashboard";
 import Start from "./Start";
+import { connect } from 'react-redux';
+import * as actions from '../actions';
 
 class App extends Component {
 
 // ========> jsx code from here <===========
+
+  componentDidMount(){
+      this.props.fetchTask();
+  }
 
   render() {
     return (
@@ -25,4 +31,4 @@ class App extends Component {
   }
 }
 
-export default App;
+export default connect(null, actions)(App);
