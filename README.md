@@ -23,4 +23,5 @@ Step 2: start react and node server
                              
 Step 3: open browser
 
-        http://localhost:3000/
+        http://localhost:3000/
+        httl://localhost:3000/dashboard   to access dashboard page
