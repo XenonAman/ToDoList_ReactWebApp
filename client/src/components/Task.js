@@ -17,11 +17,13 @@ class Task extends Component {
               className="Tff">
               <br />
                 <h3 className="Thead">Add Task</h3>
-                <Field type="text" name="task" component={TaskField} placeholder="Task"/>
+                <Field type="text" name="task" component="input" placeholder="Task" className="Tinput" />
                 <br />
-                <Field type="text" name="disp" component={TaskField} placeholder="Description"/>
+                <br />
+                <Field type="text" name="disp" component="input" placeholder="Description" className="Tinput" />
                 <p className="right">not more then 20 characters.</p>
-                <Field type="text" name="time" component={TaskField} placeholder="DeadLine i.e. 05:30 PM 19/02/2018"/>
+                <Field type="text" name="time" component="input" placeholder="DeadLine i.e. 05:30 PM 19/02/2018" className="Tinput" />
+                <br />
                 <br />
                 <br />
                 <button type="submit" className="lbtn">Submit Task</button>
