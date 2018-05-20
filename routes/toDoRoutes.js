@@ -21,7 +21,7 @@ module.exports = app =>{
 
   // send task list to frontend
   app.get('/api/showtask', async (req,res) => {
-    const getT = await Todo.find();
+    const getT = await Todo.find({isDeleted: false});
     res.send(getT);
   });
 };

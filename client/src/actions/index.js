@@ -7,3 +7,7 @@ export const fetchTask = () => {
     .then(res => dispatch ({ type: FETCH_TASK, payload: res}));
   }
 };
+
+export const saveTask = values => {
+  return { type: 'save_task'};
+};

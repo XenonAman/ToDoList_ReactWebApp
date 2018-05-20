@@ -6,7 +6,26 @@ import Showtask from './Showtask';
 
 class Dashboard extends Component {
 
-//var name ="Aman Mahato"
+  constructor(){
+    super();
+    this.state ={
+      mode: false,
+      del: false
+    };
+    this.changeMode = this.changeMode.bind(this);
+    this.delTask = this.delTask.bind(this);
+  }
+  changeMode() {
+    this.setState({
+      mode: !this.state.mode
+    });
+  }
+
+  delTask() {
+    this.setState({
+      del: !this.state.del
+    });
+  }
 
 // ========> jsx code from here <===========
 
@@ -18,6 +37,8 @@ class Dashboard extends Component {
 {/*====Whitespace====*/}
 {/*====Whitesoace====*/}
 
+      {/*{this.state.mode ? <h1>Ha</h1> : <h1>Na</h1> }
+      {this.state.del ? <h1>Ha</h1> : <h1>Na</h1> }*/}
       <Animated
       animationIn="pulse"
       animationOut="fadeOut"
@@ -49,7 +70,7 @@ class Dashboard extends Component {
           isVisible={true}
           >
             <Col xs={12} md={7} className="colRight">
-                <Showtask />
+                <Showtask changeMode={this.changeMode} delTask={this.delTask}/>
             </Col>
           </Animated>
           </Row>
