@@ -36,20 +36,7 @@ if (this.state.tasks.length > 0) {
 
         return(
           eachTask.done ?
-            <div className="renderTask">
-                  <Row>
-                    <Col md={6}><h4 className="tname">{eachTask.task}</h4></Col>
-                    <Col md={6}><h5 className="tdead">Deadline: {eachTask.time}</h5></Col>
-                  </Row>
-                  <Row>
-                    <Col md={6}><h5 className="tdisp">{eachTask.disp}</h5></Col>
-                    <Col md={6}><span className="gbtn">
-                      <button className="com" onClick={this.props.changeMode}>Completed</button>
-                      <button className="del" onClick={this.props.delTask}>Delete</button>
-                    </span></Col>
-                  </Row>
-              </div>
-            :  <div className="crenderTask">
+            <div className="crenderTask">
                   <Row>
                     <Col md={6}><h4 className="cname">{eachTask.task}</h4></Col>
                     <Col md={6}><h5 className="cdead">Deadline: {eachTask.time}</h5></Col>
@@ -58,6 +45,19 @@ if (this.state.tasks.length > 0) {
                     <Col md={6}><h5 className="cdisp">{eachTask.disp}</h5></Col>
                     <Col md={6}><span className="gbtn">
                       <button className="com" onClick={this.props.changeMode}>Remaining</button>
+                      <button className="del" onClick={this.props.delTask}>Delete</button>
+                    </span></Col>
+                  </Row>
+              </div>
+            :  <div className="renderTask">
+                  <Row>
+                    <Col md={6}><h4 className="tname">{eachTask.task}</h4></Col>
+                    <Col md={6}><h5 className="tdead">Deadline: {eachTask.time}</h5></Col>
+                  </Row>
+                  <Row>
+                    <Col md={6}><h5 className="tdisp">{eachTask.disp}</h5></Col>
+                    <Col md={6}><span className="gbtn">
+                      <button className="com" onClick={this.props.changeMode}>Completed</button>
                       <button className="del" onClick={this.props.delTask}>Delete</button>
                     </span></Col>
                   </Row>
