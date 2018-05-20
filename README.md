@@ -14,8 +14,8 @@ Step 2: start react and node server
 # alternet option to run both server simultenusly 
 
         install concurrently 
-                             npm install -g concurrently
-                             npm install concurrently --save 
+                             npm install -g concurrently
+                             npm install concurrently --save 
                              in server package.json file
                              
                              run command on server terminal
@@ -24,4 +24,6 @@ Step 2: start react and node server
 Step 3: open browser
 
         http://localhost:3000/
-        httl://localhost:3000/dashboard   to access dashboard page
+        http://localhost:3000/dashboard   
+        
+        to access dashboard page
