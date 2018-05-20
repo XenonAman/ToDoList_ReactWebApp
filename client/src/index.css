@@ -88,7 +88,7 @@ body {
 
 .profile{
   height: auto;
-  padding: 60px 0px 20px 0px;
+  padding: 20px 0px 20px 0px;
   background-color: #1abc9c;
   text-align: center;
   color: #fff;
@@ -236,32 +236,54 @@ body {
   background-color: #81ecec;
 }
 
-.tname{
-  font-weight: bold;
-  font-style: oblique;
-  display: inline;
-  float: left;
-  margin-left: 10px;
+.crenderTask{
+  margin: auto;
+  width: 550px;
+  height: 60px;
+  margin-bottom: 10px;
+  background-color: #ecf0f1;
+  opacity: 0.5;
   text-decoration: line-through;
 }
 
+.tname{
+  font-weight: bold;
+  font-style: oblique;
+  padding-left: 10px;
+  float: left;
+}
 .tdead{
-  display: inline;
+  padding-right: 10px;
   float: right;
-  margin-right: 10px;
+}
+.tdisp{
+  float: left;
+  padding-left: 10px;
+  margin-top: 0px;
 }
 
-.tdisp{
-  display: block;
+.cname{
+  font-weight: bold;
+  font-style: oblique;
+  padding-left: 10px;
   float: left;
-  margin-left: -90px;
-  margin-top: 18px;
+  text-decoration: line-through;
+}
+.cdead{
+  padding-right: 10px;
+  float: right;
+  text-decoration: line-through;
+}
+.cdisp{
+  float: left;
+  padding-left: 10px;
+  margin-top: 0px;
+  text-decoration: line-through;
 }
 
 .gbtn{
   float: right;
-  display: block;
-  margin-right: 10px;
+  margin-right: 20px;
   padding-bottom: 0px;
   font-weight: bold;
   color: #fff;

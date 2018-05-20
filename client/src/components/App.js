@@ -9,10 +9,6 @@ class App extends Component {
 
 // ========> jsx code from here <===========
 
-  componentDidMount(){
-      this.props.fetchTask();
-  }
-
   render() {
     return (
       <div className="App"> {/*====Main Div====*/}

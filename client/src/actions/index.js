@@ -3,7 +3,7 @@ import { FETCH_TASK } from './types';
 
 export const fetchTask = () => {
   return function(dispatch) {
-    axios.get('/api/task')
+    axios.get('/api/showtask')
     .then(res => dispatch ({ type: FETCH_TASK, payload: res}));
   }
 };
