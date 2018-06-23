@@ -120,7 +120,6 @@ body {
   font-family: cursive;
   font-size: 3em;
   margin-bottom: 50px;
-
 }
 
 .Tff{
@@ -231,7 +230,7 @@ body {
 .renderTask{
   margin: auto;
   width: 550px;
-  height: 60px;
+  height: 60px, auto;
   margin-bottom: 10px;
   background-color: #81ecec;
 }
@@ -239,7 +238,7 @@ body {
 .crenderTask{
   margin: auto;
   width: 550px;
-  height: 60px;
+  height: 60px, auto;
   margin-bottom: 10px;
   background-color: #ecf0f1;
   opacity: 0.5;
@@ -247,6 +246,7 @@ body {
 }
 
 .tname{
+  text-align: left;
   font-weight: bold;
   font-style: oblique;
   padding-left: 10px;
@@ -263,6 +263,7 @@ body {
 }
 
 .cname{
+  text-align: left;
   font-weight: bold;
   font-style: oblique;
   padding-left: 10px;
@@ -284,26 +285,49 @@ body {
 .gbtn{
   float: right;
   margin-right: 20px;
-  padding-bottom: 0px;
   font-weight: bold;
   color: #fff;
   font-size: 12px;
 }
 
 .com{
+  color: #fff;
   height: 20px;
   width: auto;
   border: none;
-  border-radius: 5px 0px 0px 0px;
+  border-radius: 10px 0px 0px 10px;
   background-color: #2980b9;
   padding: 2px 6px 2px 6px;
 }
 
 .del{
+  color: #fff;
   height: 20px;
   width: auto;
   border: none;
-  border-radius: 0px 5px 0px 0px;
+  border-radius: 0px 10px 10px 0px;
   background-color: #ff183b;
   padding: 2px 6px 2px 6px;
+}
+
+.ccom{
+  color: #fff;
+  height: 20px;
+  width: auto;
+  border: none;
+  border-radius: 10px 0px 0px 10px;
+  background-color: #2980b9;
+  padding: 2px 6px 2px 6px;
+  opacity: 2.0;
+}
+
+.cdel{
+  color: #fff;
+  height: 20px;
+  width: auto;
+  border: none;
+  border-radius: 0px 10px 10px 0px;
+  background-color: #ff183b;
+  padding: 2px 6px 2px 6px;
+  opacity: 2.0;
 }

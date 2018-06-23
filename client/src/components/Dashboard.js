@@ -12,20 +12,8 @@ class Dashboard extends Component {
       mode: false,
       del: false
     };
-    this.changeMode = this.changeMode.bind(this);
-    this.delTask = this.delTask.bind(this);
-  }
-  changeMode() {
-    this.setState({
-      mode: !this.state.mode
-    });
   }
 
-  delTask() {
-    this.setState({
-      del: !this.state.del
-    });
-  }
 
 // ========> jsx code from here <===========
 
@@ -39,6 +27,7 @@ class Dashboard extends Component {
 
       {/*{this.state.mode ? <h1>Ha</h1> : <h1>Na</h1> }
       {this.state.del ? <h1>Ha</h1> : <h1>Na</h1> }*/}
+
       <Animated
       animationIn="pulse"
       animationOut="fadeOut"
@@ -51,29 +40,31 @@ class Dashboard extends Component {
           </Row>
       </Animated>
 
-          <Row className="show-grid">
-          <Animated
-          animationIn="bounceIn"
-          animationOut="fadeOut"
-          isVisible={true}
-          >
-            <Col xs={12} md={4} className="colLeft">
-                <Task />
-            </Col>
-          </Animated>
-            <Col xs={12} md={1} className="standLine">
-                <div className="line"></div>
-            </Col>
-          <Animated
-          animationIn="bounceIn"
-          animationOut="fadeOut"
-          isVisible={true}
-          >
-            <Col xs={12} md={7} className="colRight">
-                <Showtask changeMode={this.changeMode} delTask={this.delTask}/>
-            </Col>
-          </Animated>
-          </Row>
+      <Row className="show-grid">
+        <Animated
+        animationIn="bounceIn"
+        animationOut="fadeOut"
+        isVisible={true}
+        >
+          <Col xs={12} md={4} className="colLeft">
+              <Task />
+          </Col>
+        </Animated>
+
+          <Col xs={12} md={1} className="standLine">
+              <div className="line"></div>
+          </Col>
+
+        <Animated
+        animationIn="bounceIn"
+        animationOut="fadeOut"
+        isVisible={true}
+        >
+          <Col xs={12} md={7} className="colRight">
+              <Showtask />
+          </Col>
+        </Animated>
+      </Row>
 {/*====Whitesoace====*/}
 {/*====Whitesoace====*/}
       </div>
